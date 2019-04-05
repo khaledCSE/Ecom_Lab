@@ -2,10 +2,63 @@
 <html>
   <head>
     <title>Home</title>
+    <!-- Scripts -->
+    <script src="/javascripts/jquery.slim.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+    <!-- Scripts end -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Home</h1>
-    <p>Welcome to Home</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <a class="navbar-brand text-warning" href="#">Md. Khaled uz Zaman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto navbar">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lab Assignments
+            </a>
+              <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+              <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-warning" href="#">Home Page</a>
+                <a class="dropdown-item text-warning" href="#">Additional Routes</a>
+                <a class="dropdown-item text-warning" href="#">Collect Data</a>
+                <a class="dropdown-item text-warning" href="#">Request & Response</a>
+                <a class="dropdown-item text-warning" href="#">Update & Delete</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="#"><button class="text-warning abm">About Me</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    
+    <!-- Main elements -->
+    <div class="container text-center main-element">
+      <h1 class="mt-5 text-white font-weight-light text-warning">E-commerce lab activity</h1>
+      <button class="btn btn-outline-warning"><h5><b>Explore More</b></h5></button>
+    </div>
+    <!-- Main elements end -->
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container text-center">
+        <span class="text-warning">&copy; All rights reserved by Khaled</span>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    
   </body>
 </html>
