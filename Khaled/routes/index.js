@@ -16,6 +16,20 @@ router.get('/collect_data', function(req, res, next) {
   res.render('collect_data');
 });
 
+
+/* POST route for collect_data */
+router.post('/collect_data', function(req, res, next) {
+  var name = req.body.name;
+  var email = req.body.email;
+  var subject = req.body.subject;
+  var telephone = req.body.telephone;
+  var msg = req.body.msg;
+
+  console.log('Name: ' + name + ' \n' + 'email: ' + email + ' \n' + 'Subject: ' + subject + ' \n' + 'Tel: ' + telephone + ' \n' + 'Message: ' + msg);
+  res.redirect('/collect_data');
+});
+/***************************************/
+
 /* GET request_response page. */
 router.get('/request_response', function(req, res, next) {
   res.render('request_response');

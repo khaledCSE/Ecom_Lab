@@ -10,74 +10,33 @@ body {
     color: #00B7FF;
   }
   
-  /* Navrar Styles */
-  /* Change this breakpoint if you change the breakpoint of the navbar */
-  
-  @media (min-width: 992px) {
-    .animate {
-      animation-duration: 0.3s;
-      -webkit-animation-duration: 0.3s;
-      animation-fill-mode: both;
-      -webkit-animation-fill-mode: both;
-    }
-  }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
-    100% {
-      transform:translateY(0rem);
-      opacity: 1;
-    }
-    0% {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
-  }
-  
-  @-webkit-keyframes slideIn {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 1;
-    }
-    0% {
-      -webkit-transform: translateY(1rem);
-      -webkit-opacity: 0;
-    }
-  }
-  
-  .slideIn {
-    -webkit-animation-name: slideIn;
-    animation-name: slideIn;
-    background-color: transparent;
-  }
-  
-  .slideIn .text-warning:hover {
-    background-color: #000;
-    opacity: 0.6;
-  }
-  
-  .abm {
-    height: 30px;
-    width: 100px;
-    background-color: transparent;
-    border: transparent;
-  }
-  
-  .bg-transparent {
-    margin-top: 5vh;
-  }
-  
-  .dropdown .text-warning {
-    margin-right: 3ch;
-  }
-  /* Navbar styles end */
+  /* Navbar */
+.navbar-nav {
+  list-style: none;
+}
+
+.nav-item {
+  padding: 2vh 3ch;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #FFC107;
+  transform: 0.6s ease;
+}
+
+.nav-item a:hover {
+  color: #FFC107;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #FFC107;
+}
+
+.nav-item.active a {
+  color: #FFC107;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #FFC107;
+}
+/***************************************************/
   
   /* Main element styles */
   .main-element {

@@ -1,83 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Custom Navbar */
-.box {
-    height: 100vh;
-    width: 100%;
+/* Global */
+body {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.8)
     ), url('/images/about_me_cover.png');
     background-size: cover;
-    background-position: center;
+}
+/***************************************************/
+
+/* Navbar */
+.navbar-nav {
+    list-style: none;
 }
 
-.box .mylogo {
-    float: left;
-    height: 60px;
-    width: 120px;
-    margin-top: 5vh;
-    margin-left: 10ch;
+.nav-item {
+    padding: 2vh 3ch;
 }
 
-.box ul {
-    float: right;
-    margin-top: 5vh;
-    margin-right: 5ch;
-}
-
-.box ul li {
-    display: inline-block;
-}
-
-.box ul li a {
+.nav-item a {
     text-decoration: none;
     color: #FFC107;
     transform: 0.6s ease;
-    padding: 2ch;
 }
 
-.box ul li a:hover {
+.nav-item a:hover {
+    color: #FFC107;
+    padding-bottom: 2vh;
     border-bottom: 1px solid #FFC107;
 }
 
-.box ul li.active a {
+.nav-item.active a {
+    color: #FFC107;
+    padding-bottom: 2vh;
     border-bottom: 1px solid #FFC107;
 }
+/***************************************************/
 
-.photo .avatar {
+/* Main Element */
+.main-element {
+    margin-top: 5%;
+}
+
+.main-element img {
     border-radius: 50%;
-    margin-top: 25vh;
-    width: 250px;
-    height: 250px;
-
-    margin-left: 30%;
 }
 
-.photo p {
-    font-size: 4vh;
-    margin-top: 4vh;
-    margin-right: 3%;
-}
-/****************************************************************/
-
-/* Social */
-.mysocial {
-    text-align: center;
-    height: 24vh;
-    padding: 5ch;
+.main-element h3{
+    color: #FFC107;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3vh;
+    margin-bottom: 10%;
 }
 
-.mysocial .btn-outline-warning {
-    height: 6vh;
-    width: 6ch;
+.main-element h4 {
+    color: #FFC107;
+    margin-bottom: 3vh;
+}
+
+.social-buttons a {
+    text-decoration: none;
+}
+
+.social-buttons li {
+    display: inline-block;
+}
+
+.social-buttons .buttons {
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    margin: 3ch;
+    margin-left: 2ch;
+    border: 2px solid #FFC107;
 }
-/****************************************************************/
+/***************************************************/
 
 /* Footer */
 footer {
@@ -86,5 +81,5 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-}
-/****************************************************************/
+  }
+  /************************************/

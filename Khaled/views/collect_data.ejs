@@ -4,13 +4,95 @@
         <title>Collect Data</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+
+        <script src="/javascripts/jquery.slim.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
+        <link href="/stylesheets/collect_data.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/navbar.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-    <h1>Collect Data</h1><hr>
-    <a href="/update_delete">Go to Update & Delete</a><br>
-    <a href="/request_response">Go to Request & Response</a><br>
-    <a href="/additional_routes">Go to Additional Routes</a><br>
-    <a href="/">Back to home</a><br>
+
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="/">
+            <img src="/images/logo_3.png" width="120" height="60">
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/additional_routes">Additional Routes</a></li>
+                    <li class="nav-item active"><a href="/collect_data">Collect Data</a></li>
+                    <li class="nav-item"><a href="/request_response">Request & Response</a></li>
+                    <li class="nav-item"><a href="/update_delete">Update & Delete</a></li>
+                    <li class="nav-item"><a href="/about_me">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!------------------------------------------>
+            <section class="contact pt-100 pb-100" id="contact">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-xl-6 mx-auto text-center">
+                             <div class="section-title mb-100">
+                                <p>get in touch</p>
+                                <h4>contact me</h4>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row text-center">
+                             <div class="col-md-8">
+                                <form action="/collect_data" class="contact-form" method="POST">
+                                   <div class="row">
+                                      <div class="col-xl-6">
+                                         <input type="text" placeholder="name" name="name">
+                                      </div>
+                                      <div class="col-xl-6">
+                                         <input type="text" placeholder="email" name="email">
+                                      </div>
+                                      <div class="col-xl-6">
+                                         <input type="text" placeholder="subject" name="subject">
+                                      </div>
+                                      <div class="col-xl-6">
+                                         <input type="text" placeholder="telephone" name="telephone">
+                                      </div>
+                                      <div class="col-xl-12">
+                                         <textarea placeholder="message" cols="30" rows="10" name="msg"></textarea>
+                                         <input type="submit" value="send message">
+                                      </div>
+                                   </div>
+                                </form>
+                             </div>
+                             <div class="col-md-4">
+                                <div class="single-contact">
+                                   <i class="fa fa-map-marker"></i>
+                                   <h5>Address</h5>
+                                   <p>661 Lefferts, NY 11203, USA</p>
+                                </div>
+                                <div class="single-contact">
+                                   <i class="fa fa-phone"></i>
+                                   <h5>Phone</h5>
+                                   <p>(+1) 517 397 7100</p>
+                                </div>
+                                <div class="single-contact">
+                                   <i class="fa fa-envelope"></i>
+                                   <h5>Email</h5>
+                                   <p>infor@personal.com</p>
+                                </div>
+                             </div>
+                       </div>
+                    </div>
+                 </section>
     </body>
 </html>

@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <head>
+        <title>About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Scripts -->
-    <script src="/javascripts/jquery.slim.min.js"></script>
-    <script src="/javascripts/popper.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
-    <script src="/javascripts/bootstrap.bundle.min.js"></script>
-    <!-- Scripts end -->
-    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-    <link rel='stylesheet' href='/stylesheets/about_me.css' />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
-<body>
-    <div class="box">
-        <a href="/"><img src="/images/logo_3.png" class="mylogo" alt="Home"></a>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/additional_routes">Additional Routes</a></li>
-            <li><a href="/collect_data">Collect Data</a></li>
-            <li><a href="/request_response">Request & Response</a></li>
-            <li><a href="/Update_delete">Update & Delete</a></li>
-            <li class="active"><a href="#">About Me</a></li>    
-        </ul>
+        <!-- Bootstrap -->
+        <script src="/javascripts/jquery.slim.min.js"></script>
+        <script src="/javascripts/popper.min.js"></script>
+        <script src="/javascripts/bootstrap.bundle.min.js"></script>
+        <script src="/javascripts/bootstrap.min.js"></script>
 
-        <div class="text-center photo">
-            <img src="/images/about_me_profile.svg" class="img-circle avatar">
-            <p class="text-warning"><b>Md. Khaled uz Zaman</b></p>
-        </div>
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <!---------------------------------------->
 
-        <div class="mysocial">
-                <h3 class="text-warning"><b>My Networks</b></h3>
-                <!--Email-->
-                <button type="button" class="btn btn-email button btn-outline-warning"><i class="fas fa-envelope"></i></button>
-                <!--Github-->
-                <button type="button" class="btn btn-git button btn-outline-warning"><i class="fab fa-github"></i></button>
-                <!--Facebook-->
-                <button type="button" class="btn btn-fb button btn-outline-warning"><i class="fab fa-facebook-f"></i></button>
-                <!-- Hackerrank -->
-                <button type="button" class="btn btn-hr button btn-outline-warning"><i class="fab fa-hackerrank"></i></button>
-                <!--Linkedin-->
-                <button type="button" class="btn btn-li button btn-outline-warning"><i class="fab fa-linkedin-in"></i></button>
-                <!--Stack Overflow-->
-                <button type="button" class="btn btn-so button btn-outline-warning"><i class="fab fa-stack-overflow"></i></button>
+        <link rel="stylesheet" href="/stylesheets/about_me.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="/">
+            <img src="/images/logo_3.png" width="120" height="60">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/additional_routes">Additional Routes</a></li>
+                    <li class="nav-item"><a href="/collect_data">Collect Data</a></li>
+                    <li class="nav-item"><a href="/request_response">Request & Response</a></li>
+                    <li class="nav-item"><a href="/update_delete">Update & Delete</a></li>
+                    <li class="nav-item active"><a href="/about_me">About Me</a></li>
+                </ul>
             </div>
-    </div>
+        </nav>
+        <!------------------------------------------>
 
+        <!-- Main Element -->
+        <div class="container text-center main-element">
+            <img src="/images/about_me_profile.svg" width="250" height="250">
+            <h3>Md. Khaled uz Zaman</h3>
 
-    <!-- Footer -->
-    <footer class="footer mt-auto py-3">
-        <div class="container text-center">
-          <span class="text-warning">&copy; All rights reserved by Khaled</span>
+            <h4>My Networks</h4>
+            <ul class="social-buttons">
+                <li><a href="https://www.facebook.com/sporshozaman" target="_blank"><button type="button" class="btn btn-fb btn-outline-warning buttons"><i class="fab fa-facebook-f"></i></button></a></li>
+                <li><a><button type="button" class="btn btn-tw btn-outline-warning buttons"><i class="fab fa-twitter"></i></button></a></li>
+                <li><a><button type="button" class="btn btn-git btn-outline-warning buttons"><i class="fab fa-github"></i></button></a></li>
+                <li><a><button type="button" class="btn btn-hr btn-outline-warning buttons"><i class="fab fa-hackerrank"></i></button></a></li>
+                <li><a><button type="button" class="btn btn-li btn-outline-warning buttons"><i class="fab fa-linkedin-in"></i></button></a></li>
+            </ul>
+
         </div>
-      </footer>
-      <!-- Footer end -->
-</body>
+        <!------------------------------------------>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3 fixed-bottom">
+            <div class="container text-center">
+              <span class="text-warning">&copy; All rights reserved by Khaled</span>
+            </div>
+        </footer>
+          <!-- Footer end -->
+    </body>
 </html>
