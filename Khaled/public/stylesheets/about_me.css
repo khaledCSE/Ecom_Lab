@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Navbar */
+.box {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    ), url('/images/about_me_cover.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box .mylogo {
+    float: left;
+    height: 60px;
+    width: 120px;
+    margin-top: 5vh;
+    margin-left: 10ch;
+}
+
+.box ul {
+    float: right;
+    margin-top: 5vh;
+    margin-right: 5ch;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: #FFC107;
+    transform: 0.6s ease;
+    padding: 2ch;
+}
+
+.box ul li a:hover {
+    border-bottom: 1px solid #FFC107;
+}
+
+.box ul li.active a {
+    border-bottom: 1px solid #FFC107;
+}
+
+.photo .avatar {
+    border-radius: 50%;
+    margin-top: 25vh;
+    width: 250px;
+    height: 250px;
+
+    margin-left: 30%;
+}
+
+.photo p {
+    font-size: 4vh;
+    margin-top: 4vh;
+    margin-right: 3%;
+}
+/****************************************************************/
+
+/* Social */
+.mysocial {
+    text-align: center;
+    height: 24vh;
+    padding: 5ch;
+}
+
+.mysocial .btn-outline-warning {
+    height: 6vh;
+    width: 6ch;
+    border-radius: 50%;
+    margin: 3ch;
+}
+/****************************************************************/
+
+/* Footer */
+footer {
+    background-color: #000;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+/****************************************************************/

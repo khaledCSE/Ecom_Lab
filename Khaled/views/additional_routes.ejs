@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Additional Routes</title>
+
+    <!-- Bootstrap -->
+    <script src="/javascripts/jquery.slim.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/additional_routes.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+              <a class="navbar-brand text-warning" href="#">Md. Khaled uz Zaman</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-warning" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lab Assignments
+                  </a>
+                    <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                    <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item text-warning" href="/">Home Page</a>
+                      <a class="dropdown-item text-warning" href="/additional_routes">Additional Routes</a>
+                      <a class="dropdown-item text-warning" href="#">Collect Data</a>
+                      <a class="dropdown-item text-warning" href="#">Request & Response</a>
+                      <a class="dropdown-item text-warning" href="#">Update & Delete</a>
+                    </div>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a href="#"><button class="text-warning abm">About Me</button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar end -->
+    
+    <!-- Main elements -->
+    <div class="container text-center main-element">
+        <h1 class="mt-5 text-white font-weight-light text-warning">Choose Your Way!</h1>
+        <a href="/collect_data"><button class="btn btn-outline-success btn-lg"><h5><b>Collect Data</b></h5></button></a>
+        <a href="/request_response"><button class="btn btn-outline-info btn-lg"><h5><b>Request & Response</b></h5></button></a>
+        <a href="/additional_routes"><button class="btn btn-outline-danger btn-lg"><h5><b>Update & Delete</b></h5></button></a>
+        <a href="/"><button class="btn btn-outline-warning btn-lg"><h5><b>Back to Home</b></h5></button></a>
+    </div>
+          <!-- Main elements end -->
+    
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+          <span class="text-warning">&copy; All rights reserved by Khaled</span>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+</html>
